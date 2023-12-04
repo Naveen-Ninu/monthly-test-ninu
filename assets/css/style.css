@@ -1,14 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
 
 * {
-    list-style-type: none !important;
     text-decoration: none !important;
     scroll-behavior: smooth;
 }
 
 html,
 body {
-    font-family: "Inter", sans-serif;
+    font-family: 'Playfair Display', serif;
     /* overflow-x: hidden !important; */
     background-color: var(--body-bg);
 }
@@ -39,6 +39,7 @@ body {
     --lh-18: 18px;
     /* ===== COLORS ===== */
     --clr-black: #000000;
+    --clr-lite-black: #333333;
     --clr-white: #ffffff;
     --clr-grey-one: #666666;
     --clr-grey-two: #595959;
@@ -53,25 +54,31 @@ body {
 
 @media (max-width: 1199.98px) {
     :root {
-        --fs-xsm: 12px;
+        --fs-xxl: 26px;
     }
 }
 
 @media (max-width: 991.98px) {
     :root {
         --fs-xsm: 12px;
+        --fs-5xl: 38px;
     }
 }
 
 @media (max-width: 767.98px) {
     :root {
         --fs-xsm: 12px;
+        --fs-5x: 40px;
     }
 }
 
 @media (max-width: 575.98px) {
     :root {
-        --fs-xsm: 12px;
+        --fs-5xl: 36px;
+        --fs-4xl: 25px;
+        --fs-3xl: 24px;
+        --fs-xl: 18px;
+        --fs-xxl: 25px;
     }
 }
 
@@ -149,11 +156,6 @@ body {
     line-height: var(--lh-18);
 }
 
-.common_heading {
-    font-size: var(--fs-5xl);
-    line-height: var(--lh-28);
-}
-
 /* ======= COLORS ======= */
 .clr_white {
     color: var(--clr-white);
@@ -161,6 +163,10 @@ body {
 
 .clr_black {
     color: var(--clr-black);
+}
+
+.clr_lite_black {
+    color: var(--clr-lite-black);
 }
 
 .clr_grey_one {
@@ -192,6 +198,9 @@ body {
 }
 
 /* =======================common-classes start ======================= */
+.font_Josefin {
+    font-family: 'Josefin Sans', sans-serif;
+}
 
 .transition {
     -webkit-transition: all 0.3s ease-in-out !important;
@@ -233,7 +242,154 @@ a:hover {
     cursor: pointer;
 }
 
-/* ==== HERO ==== */
+.fw_semibold {
+    font-weight: 600 !important;
+}
+
+.common_heading {
+    font-size: var(--fs-5xl);
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: var(--lh-28);
+}
+
+.common_bg_green_btn {
+    font-size: var(--fs-base);
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    background-color: var(--clr-green);
+    padding: 9px 20px;
+    border-radius: 50px;
+    line-height: normal;
+    border: 1px solid transparent;
+}
+
+.common_bg_green_btn:hover {
+    background-color: #ffffff;
+    color: var(--clr-green);
+    border: 1px solid var(--clr-green);
+}
+
+.common_bg_white_btn {
+    background-color: #ffffff;
+    color: var(--clr-green);
+    border: 1px solid var(--clr-green);
+    padding: 9px 20px;
+    border-radius: 50px;
+    line-height: normal;
+    font-size: var(--fs-base);
+}
+
+.common_bg_white_btn:hover {
+
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    background-color: var(--clr-green);
+}
+
+.rating_btn {
+    background-color: #000000;
+    color: white;
+    border-radius: 16px;
+    padding: 11px 33px;
+    text-wrap: nowrap;
+}
+
+.rating_btn_set {
+    right: 50%;
+    top: -2%;
+    transform: translateX(50%);
+}
+
+.most_nft_card_parent {
+    max-width: 363px;
+    border-radius: 25px;
+    padding: 39px 27px 29px 27px;
+    border: 1px solid rgba(39, 160, 153, 0.49);
+    background: #FFF;
+}
+
+.most_card_icons {
+    max-width: 295px;
+}
+
+.most_nft_section_spaceing {
+    padding: 26px 0 96px 0;
+}
+
+/* ========================= HERO CSS ========================= */
+.hero_bg_img {
+    background-image: url("/assets/images/png/hero-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 110px 0 133px 0;
+}
+
+.hero_heading {
+    font-size: var(--fs-4xl);
+}
+
+.hero_center_img {
+    right: 50%;
+    bottom: -48%;
+    transform: translateX(50%);
+}
+
+/* ========================= BEST NFT CSS ========================= */
+.bext_nft_heading {
+    padding: 263px 0 110px 0;
+}
+
+.best_nft_cards {
+    max-width: 363px;
+    border-radius: 25px;
+    border: 1px solid rgba(39, 160, 153, 0.49);
+    background: #FFF;
+}
+
+.best_nft_logos {
+    max-width: 191px;
+}
+
+/* ========================= Top 3 NFTs CSS ========================= */
+.top_three_parent {
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+    padding: 61px 0 58px 0;
+    margin-top: 110px;
+}
+
+.top_three_para {
+    max-width: 968px;
+}
+
+.hastag_heading {
+    max-width: 400px;
+}
+
+/* ========================= About Antonym: GENESIS CSS ========================= */
+.antonym__genesis_card {
+    border-radius: 25px;
+    border: 1px solid #27A099;
+    padding: 48px 118px 48px 69px;
+}
+
+.yellow_star_icon {
+    max-width: 145px;
+}
+
+.antonym_genisis_logo_big {
+    max-width: 245px;
+}
+
+/* ==================== Compare NFT START ====================*/
+.compare_nft_parent {
+    padding: 39px 39px 39px 36px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+}
 
 /* ==================== BACK-TO-TOP-CSS-START ====================*/
 #scroll svg {
@@ -303,17 +459,78 @@ a:hover {
 
 
 @media (min-width: 1200px) and (max-width: 1599.98px) {
-    .custom_global_container {
-        max-width: 1076px !important;
+    .custom_container {
+        max-width: 1140px !important;
+        margin: 0 auto;
     }
 }
 
-@media (max-width: 1599.98px) {}
+@media (max-width: 1199.98px) {
+    .most_nft_section_spaceing {
+        padding: 26px 0 48px 0;
+    }
 
-@media (max-width: 1199.98px) {}
+    .top_three_parent {
+        padding: 48px 0 48px 0;
+        margin-top: 60px;
+    }
+
+    .bext_nft_heading {
+        padding: 219px 0 60px 0;
+    }
+
+    .most_card_icons {
+        max-width: 238px;
+    }
+
+    .most_card_icons {
+        max-width: 293px;
+        margin-top: 24px;
+    }
+}
 
 @media (max-width: 991.98px) {}
 
-@media (max-width: 767.99px) {}
+@media (max-width: 767.99px) {
+    .most_nft_card_parent {
+        padding: 24px 12px 24px 12px;
+    }
 
-@media (max-width: 577px) {}
+    .antonym__genesis_card {
+        padding: 48px 60px 48px 60px;
+    }
+
+    .top_three_parent {
+        padding: 24px 0 24px 0;
+    }
+
+    .best_nft_logos {
+        max-width: 130px;
+    }
+
+    .best_nft_cards {
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 577px) {
+    .hero_center_circle {
+        max-width: 160px;
+    }
+
+    .antonym__genesis_card {
+        padding: 40px 24px 40px 24px;
+    }
+
+    .bext_nft_heading {
+        padding: 174px 0 48px 0;
+    }
+
+    .hero_center_img {
+        bottom: -40%;
+    }
+
+    .compare_nft_parent {
+        padding: 24px 16px 24px 16px;
+    }
+}
