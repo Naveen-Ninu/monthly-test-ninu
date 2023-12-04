@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+    list-style-type: none !important;
+    text-decoration: none !important;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    font-family: "Inter", sans-serif;
+    /* overflow-x: hidden !important; */
+    background-color: var(--body-bg);
+}
+
+.fw_medium {
+    font-weight: 500 !important;
+}
+
+:root {
+    /* ===== FONT SIZES ======= */
+    --fs-xsm: 12px;
+    --fs-sm: 16px;
+    --fs-base: 18px;
+    --fs-md: 16px;
+    --fs-lg: 23px;
+    --fs-xl: 24px;
+    --fs-xxl: 30px;
+    --fs-3xl: 36px;
+    --fs-4xl: 48px;
+    --fs-5xl: 50px;
+    /* ======= LINE HEIGHTS ====== */
+    --lh-50: 50px;
+    --lh-47: 47px;
+    --lh-36: 63px;
+    --lh-30: 30px;
+    --lh-24: 24px;
+    --lh-21: 21px;
+    --lh-18: 18px;
+    /* ===== COLORS ===== */
+    --clr-black: #000000;
+    --clr-white: #ffffff;
+    --clr-grey-one: #666666;
+    --clr-grey-two: #595959;
+    --clr-grey-three: #323232;
+    --clr-grey-four: #808080;
+    --clr-grey-five: #a9a9ac;
+    --clr-grey-six: #999999;
+    --clr-green: #27a099;
+}
+
+/*------------------------ DEFINE-ALL = @media----FONT SIZE-SET--------------------  */
+
+@media (max-width: 1199.98px) {
+    :root {
+        --fs-xsm: 12px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    :root {
+        --fs-xsm: 12px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    :root {
+        --fs-xsm: 12px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    :root {
+        --fs-xsm: 12px;
+    }
+}
+
+/* ====== FONT SIZES ====== */
+.fs_xsm {
+    font-size: var(--fs-xsm);
+}
+
+.fs_sm {
+    font-size: var(--fs-sm);
+}
+
+.fs_base {
+    font-size: var(--fs-base);
+}
+
+.fs_md {
+    font-size: var(--fs-md);
+}
+
+.fs_lg {
+    font-size: var(--fs-lg);
+}
+
+.fs_xl {
+    font-size: var(--fs-xl);
+}
+
+.fs_xxl {
+    font-size: var(--fs-xxl);
+}
+
+.fs_2xl {
+    font-size: var(--fs-2xl);
+}
+
+.fs_3xl {
+    font-size: var(--fs-3xl) !important;
+}
+
+.fs_4xl {
+    font-size: var(--fs-4xl) !important;
+}
+
+.fs_5xl {
+    font-size: var(--fs-5xl) !important;
+}
+
+/* ====== LINE HEIGHTS ===== */
+.lh_63 {
+    line-height: var(--lh-63);
+}
+
+.lh_50 {
+    line-height: var(--lh-50);
+}
+
+.lh_47 {
+    line-height: var(--lh-47);
+}
+
+.lh_30 {
+    line-height: var(--lh-30);
+}
+
+.lh_24 {
+    line-height: var(--lh-24);
+}
+
+.lh_21 {
+    line-height: var(--lh-21);
+}
+
+.lh_18 {
+    line-height: var(--lh-18);
+}
+
+.common_heading {
+    font-size: var(--fs-5xl);
+    line-height: var(--lh-28);
+}
+
+/* ======= COLORS ======= */
+.clr_white {
+    color: var(--clr-white);
+}
+
+.clr_black {
+    color: var(--clr-black);
+}
+
+.clr_grey_one {
+    color: var(--clr-grey-one);
+}
+
+.clr_grey_two {
+    color: var(--clr-grey-two);
+}
+
+.clr_grey_three {
+    color: var(--clr-grey-three);
+}
+
+.clr_grey_four {
+    color: var(--clr-grey-four);
+}
+
+.clr_grey_five {
+    color: var(--clr-grey-five);
+}
+
+.clr_grey_six {
+    color: var(--clr-grey-six);
+}
+
+.clr_green {
+    color: var(--clr-green);
+}
+
+/* =======================common-classes start ======================= */
+
+.transition {
+    -webkit-transition: all 0.3s ease-in-out !important;
+    -o-transition: all 0.3s ease-in-out !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.hov_scale:hover {
+    -webkit-box-shadow: 0px 0px 16px 0px #00000029;
+    box-shadow: 0px 0px 16px 0px #00000029;
+    -webkit-transform: scale(1.02) !important;
+    -ms-transform: scale(1.02) !important;
+    transform: scale(1.02) !important;
+}
+
+.hov_scale_two:hover {
+    -webkit-transform: translateY(-6px) !important;
+    -ms-transform: translateY(-6px) !important;
+    transform: translateY(-6px) !important;
+}
+
+.index_m_1 {
+    z-index: -1;
+}
+
+a:hover {
+    color: unset;
+}
+
+.index_1 {
+    z-index: 1;
+}
+
+.index_5 {
+    z-index: 5;
+}
+
+.cursor_pointer {
+    cursor: pointer;
+}
+
+/* ==== HERO ==== */
+
+/* ==================== BACK-TO-TOP-CSS-START ====================*/
+#scroll svg {
+    height: 25px;
+    width: 22px;
+}
+
+#scroll {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 50;
+    cursor: pointer;
+    font-size: var(--font_lg);
+    color: white;
+    padding: 10px 12px;
+    border-radius: 50% !important;
+    background: #000000;
+    border: 1px solid var(--color-white);
+    -webkit-animation: moves 3s infinite;
+    animation: moves 3s infinite;
+    -webkit-transition: all 0.3s ease-in-out !important;
+    -o-transition: all 0.3s ease-in-out !important;
+    transition: all 0.3s ease-in-out !important;
+    -webkit-box-shadow: 0 0 10px 1px white;
+    box-shadow: 0 0 10px 1px white;
+}
+
+@-webkit-keyframes moves {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes moves {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(-5px);
+        transform: translateY(-5px);
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+#scroll:hover {
+    -webkit-box-shadow: 0 0 15px 1px white;
+    box-shadow: 0 0 15px 1px white;
+}
+
+
+@media (min-width: 1200px) and (max-width: 1599.98px) {
+    .custom_global_container {
+        max-width: 1076px !important;
+    }
+}
+
+@media (max-width: 1599.98px) {}
+
+@media (max-width: 1199.98px) {}
+
+@media (max-width: 991.98px) {}
+
+@media (max-width: 767.99px) {}
+
+@media (max-width: 577px) {}
